@@ -42,7 +42,7 @@ const MovieCard = ({ movie }) => {
           alt={movie.Title}
         />
         <Text className="text-golden text-xl absolute ">{movie.Year}</Text>
-        <View className="absolute bottom-0 p-5 bg-[#807e7e] opacity-[1] w-[310px] rounded-[12px]">
+        <View className="absolute bottom-0 p-5 bg-[gray] bg-opacity-50 w-[310px] rounded-[12px]">
           <Text className="text-golden text-xl">{movie.Type}</Text>
           <Text className="text-golden text-xl ">{movie.Title}</Text>
         </View>

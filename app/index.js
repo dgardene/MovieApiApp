@@ -14,7 +14,7 @@ const Home = () => {
         options={{
           headerTitleAlign: "center",
           headerTitle: () => (
-            <Text className="text-golden font-medium text-center ">
+            <Text className="text-golden text-lg text-center ">
               CinematicAPI
             </Text>
           ),

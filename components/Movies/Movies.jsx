@@ -32,7 +32,6 @@ const Movies = () => {
   useEffect(() => {
     searchMovies("Transformers");
   }, []);
-
   return (
     <View>
       <View>
