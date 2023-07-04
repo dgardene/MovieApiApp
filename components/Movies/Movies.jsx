@@ -6,6 +6,7 @@ import {
   ActivityIndicator,
   Image,
 } from "react-native";
+import { SearchBar } from "react-native-elements";
 import { useRouter } from "expo-router";
 
 import { icons, COLORS, SIZES } from "../../constants";
@@ -29,13 +30,26 @@ const Movies = () => {
     setMovies(data.Search);
   };
   useEffect(() => {
-    searchMovies("Cars");
+    searchMovies("Transformers");
   }, []);
+
   return (
     <View>
-      <View style={styles.container}>
-        <View style={styles.searchWrapper}>
-          <TextInput value="" onChangeText="" placeholder="Search Movie" />
+      <View>
+        <View>
+          {/* <TextInput
+            value={searchTerm}
+            onChangeText={(text) => setSearchTerm(text)}
+            placeholder="Search Movie"
+          /> */}
+          <SearchBar
+            placeholder="Search Movie"
+            onChangeText={(text) => setSearchTerm(text)}
+            value={searchTerm}
+            searchIcon={false}
+            onClear={searchMovies(searchTerm)}
+            clearIcon={false}
+          />
         </View>
       </View>
       <View>

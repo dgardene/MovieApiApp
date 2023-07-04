@@ -10,9 +10,13 @@ const Home = () => {
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.black }}>
       <Stack.Screen
+        className="items-center justify-center"
         options={{
+          headerTitleAlign: "center",
           headerTitle: () => (
-            <Text className="text-golden font-medium">CinematicAPI</Text>
+            <Text className="text-golden font-medium text-center ">
+              CinematicAPI
+            </Text>
           ),
 
           headerStyle: { backgroundColor: "#212426" },
